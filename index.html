@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -13,19 +14,58 @@
       font-family: 'Manrope', sans-serif;
     }
   </style>
-  <!-- ============= daisyui & tailwindcss CDN Link  -->
+  <!-- ============= daisy ui & tailwind css CDN Link  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  
+
+  <!-- ========== Primary Color ========== -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-text-color': '#131318',
+          }
+        }
+      }
+    }
+  </script>
+
   <title>Hockeys</title>
 </head>
 
 <body>
-  <header>
+  <header class="container mx-auto lg:container lg:mx-auto ">
 
+    <!-- ========== Banner Section Start Here ========== -->
+    <div class="my-24">
+      <div class="carousel w-full ">
+
+        <!--==== slide 1 ====-->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!--===== slide 2 =====-->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Banner Section End Here ========== -->
   </header>
 
-  <main>
+
+
 
   </main>
 
